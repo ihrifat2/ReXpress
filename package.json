@@ -4,8 +4,9 @@
   "description": "MERN stack starter kit",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "client": "cd client && npm start",
+    "client": "npm start --prefix client",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
